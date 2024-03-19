@@ -1,3 +1,134 @@
+/* Header & Nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2B2D3C;
+                    --primary-color: #E4D3CB   ;
+                    --secondary-color: #2B2D3C ;
+                    --accent1-color: #BC0C1E;
+                    --accent2-color: #730712;
+  padding: 10px 20px;
+}
+#logo_link {
+  padding-top: 5px;
+}
+.icon {
+  width: 150px;
+  padding-top: 10px;
+}
+.navbar ul {
+  list-style-type: none;
+  background-color: #2B2D3C;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  display: inline-block;
+}
+.navbar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: #BC0C1E;
+}
+
+
+
+
+/* Body */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+  background-color: #730712;
+  color: white;
+  padding: 20px;
+        --primary-color: #E4D3CB   ;
+        --secondary-color: #2B2D3C ;
+        --accent1-color: #BC0C1E;
+        --accent2-color: #730712;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-info {
+  margin-right: auto; /* Push the social icons and site plan link to the right */
+}
+.footer-icon {
+  width: 100px; /* Adjust the size of the logo */
+}
+.social {
+  display: flex;
+}
+.social img {
+  width: 50px; /* Adjust the size of the social icons */
+  margin-right: 10px; /* Add some space between social icons */
+}
+.site-plan-link {
+  margin-left: auto; /* Push the site plan link to the right */
+  background-color: #E4D3CB;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
+@media screen and (max-width: 900px) {
+  .navbar {
+    display: block; /* Display the nav links as block elements */
+  }
+
+  .icon {
+    display: block; /* Show the logo on smaller screens */
+    width: 150px; /* Adjust the size of the logo for smaller screens */
+  }
+
+  .navbar ul {
+    padding: 0; /* Reset padding for better spacing */
+  }
+
+  .navbar li {
+    display: block; /* Display each navigation item as a block */
+    margin-bottom: 10px; /* Add some margin between each navigation item */
+  }
+
+  /* Hide the hamburger icon on smaller screens */
+  .hamburger-icon {
+    display: none;
+  }
+}
+
 
 
 
