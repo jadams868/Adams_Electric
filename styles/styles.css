@@ -43,10 +43,10 @@ body {
   padding: 0;
 }
 
-/* Main */
+/* Hero */
 .hero-image {
-  background-image: url('../images/Hero/hero-20240302_0405510002.jpg');
-  height: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Hero/hero-20240302_0405510002.jpg');
+  height: 400px;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -64,9 +64,20 @@ body {
   transform: translate(-50%, -50%);
   color: white;
 }
-
-
-
+.hero-text button {
+  background-color: #BC0C1E;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  transition: border 0.3s;
+}
+.hero-image button:hover {
+  background-color: #ff0019;
+  font-weight: 600;
+  border: 5px solid white;
+}
 
 
 
