@@ -2,30 +2,35 @@
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; /* Center items vertically */
   background-color: #2B2D3C;
-                    --primary-color: #E4D3CB   ;
-                    --secondary-color: #2B2D3C ;
-                    --accent1-color: #BC0C1E;
-                    --accent2-color: #730712;
+  --primary-color: #E4D3CB;
+  --secondary-color: #2B2D3C;
+  --accent1-color: #BC0C1E;
+  --accent2-color: #730712;
   padding: 10px 20px;
 }
+
 #logo_link {
-  padding-top: 5px;
+  display: flex; /* Use flexbox for the logo link */
+  align-items: center; /* Center the logo vertically */
 }
+
 .icon {
   width: 150px;
-  padding-top: 10px;
 }
+
 .navbar ul {
   list-style-type: none;
   background-color: #2B2D3C;
   padding: 0;
   margin: 0;
 }
+
 .navbar li {
   display: inline-block;
 }
+
 .navbar a {
   display: block;
   color: white;
@@ -33,9 +38,11 @@ header {
   padding: 15px;
   text-align: center;
 }
+
 .navbar a:hover {
   background-color: #BC0C1E;
 }
+
 
 /* Body */
 body {
@@ -63,6 +70,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  width: 500px;
+  height: 200px;
 }
 .hero-text button {
   background-color: #BC0C1E;
@@ -71,12 +80,14 @@ body {
   font-weight: bold;
   color: white;
   border: none;
-  transition: border 0.3s;
+  transition: transform 0.2s;
+  position: relative;
 }
 .hero-image button:hover {
   background-color: #ff0019;
   font-weight: 600;
-  border: 5px solid white;
+  border: 5px solid #ff0019;
+  transform: scale(1.1);
 }
 
 
