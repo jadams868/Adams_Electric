@@ -1,36 +1,43 @@
+/* Colors */
+.Colors {
+primary-color: #E4D3CB;
+secondary-color: #2B2D3C;
+accent1-color: #BC0C1E;
+accent2-color: #730712;
+}
+
+@import url('https://fonts.cdnfonts.com/css/sofachrome');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --heading-font: 'Sofachrome Rg', sans-serif, "Montserrat", sans-serif;
+  --paragraph-font: 'Roboto', "Open Sans", sans-serif,;
+}
+
 /* Header & Nav */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center; /* Center items vertically */
   background-color: #2B2D3C;
-  --primary-color: #E4D3CB;
-  --secondary-color: #2B2D3C;
-  --accent1-color: #BC0C1E;
-  --accent2-color: #730712;
   padding: 10px 20px;
 }
-
 #logo_link {
   display: flex; /* Use flexbox for the logo link */
   align-items: center; /* Center the logo vertically */
 }
-
 .icon {
   width: 150px;
 }
-
 .navbar ul {
   list-style-type: none;
   background-color: #2B2D3C;
   padding: 0;
   margin: 0;
 }
-
 .navbar li {
   display: inline-block;
 }
-
 .navbar a {
   display: block;
   color: white;
@@ -38,47 +45,43 @@ header {
   padding: 15px;
   text-align: center;
 }
-
 .navbar a:hover {
   background-color: #BC0C1E;
 }
-
 
 /* Body */
 body {
   margin: 0;
   padding: 0;
+  background-color: #2B2D3C;
+  color: #E4D3CB;
 }
 
 /* Hero */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Hero/hero-20240302_0405510002.jpg');
   height: 400px;
-
-  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-
-/* Place text in the middle of the image */
 .hero-text {
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #E4D3CB;
   width: 700px;
   height: 200px;
 }
 .hero-text button {
   background-color: #BC0C1E;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: bold;
-  color: white;
+  color: #E4D3CB;
   border: none;
   transition: transform 0.2s;
   position: relative;
@@ -86,14 +89,89 @@ body {
 .hero-image button:hover {
   background-color: #ff0019;
   font-weight: 600;
-  border: 5px solid #ff0019;
-  transform: scale(1.1);
+  border: 10px solid #ff0019;
+  transform: scale(1.4);
 }
 
+.m1 h1 {
+  text-align: center;
+  font-family: var(--heading-font);
+  background: #ff0019;
+  color: #E4D3CB;
+  margin: 0 25%;
+  width: auto;
+  padding: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 
+}
+.m1 h3, p{
+  text-align: left;
+  margin: 0 150px;
+  padding: 15px 20px 15px 20px;
+  font-size: 30px;
+  background: #E4D3CB;
+  color: black;
+}
+
+.proudly-servicing {
+  gap: 10px; /* Adjust the gap between grid items */
+  
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 150px;
+  padding: 15px 20px 15px 20px;
+  /* max-width: 900px; */
+}
+.image-container img {
+  width: 100%;
+  height: auto; 
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 25px 25px 25px 25px;
+  text-align: center;
+  justify-content: center;
+}
+  .image-container img[src="images/resized/Cache Valley - joshua-hoehne-p0x0osKKFng-unsplash.jpg"] {
+    grid-column: 1 / span 1; 
+  }
+  .image-container img[src="images/resized/Ogden_Utah_2-chase-charaba-uRHzV3ca2fk-unsplash.jpg"] {
+    grid-column: 2 / span 1; 
+  }
+  .image-container img[src="images/resized/Box Elder - chris-kofoed-mTxOQXx7JCc-unsplash.jpg"] {
+    grid-column: 3 / span 1; 
+  }
+  .image-container img[src="images/resized/Ogden_Utah_Mountians.jpg"] {
+    grid-column: 4 / span 1; 
+  }
+
+
+.services {
+text-align: left;
+margin: 0 150px;
+padding: 15px 20px 15px 20px;
+font-size: 30px;
+background: #E4D3CB;
+color: black;
+}
+
+.home-page-review {
+text-align: left;
+/* margin: 0 150px; */
+padding: 15px 20px 15px 20px;
+font-size: 30px;
+background: #E4D3CB;
+color: black;
+}
+.home-page-review h3 {
+  margin: 0 0;
+}
 
 /* Footer */
-
 footer {
   background-color: #730712;
   color: white;
