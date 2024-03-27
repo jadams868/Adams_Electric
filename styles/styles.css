@@ -52,7 +52,7 @@ header {
   text-align: center;
 }
 .navbar a:hover {
-  background-color: #BC0C1E;
+  background-color: #a30010;
 }
 
 /* Body */
@@ -82,7 +82,7 @@ body {
   color: #E4D3CB;
   width: 1000px;
   height: 200px;
-  font-family: var(--heading-font);
+  font-family: "Montserrat", sans-serif;
 }
 .hero-text button {
   background-color: #a30010;
@@ -112,6 +112,7 @@ body {
   margin-bottom: 30px;
   border-radius: 10px;
   font-size: 25px;
+  font-family: 'Sofachrome Rg', sans-serif, "Montserrat", sans-serif;;
 }
 .m1 h3, p{
   text-align: left;
@@ -126,6 +127,12 @@ body {
   margin: 30px auto;
   border: 1px solid #E4D3CB;
   border-radius: 15px;
+  text-align: center;
+  margin: 20px 70px;
+  padding: 15px 20px 15px 20px;
+  font-size: 30px;
+  color: black;
+  font-family: var(--paragraph-font);
 }
 .proudly-servicing {
   gap: 10px;
@@ -139,12 +146,16 @@ body {
 .proudly-servicing h1 {
   text-align: center;
 }
+.m1_pictures {
+  text-align: center;
+}
 .image-container {
   display: grid;
   grid-template-columns: repeat(4, minmax(300px, 1fr));
   justify-content: center;
-  margin: 0 auto; 
-  max-width: 1500px; 
+  align-items: center; /* Align items vertically */
+  margin: 0 auto;
+  max-width: 1500px;
 }
 .image-container img {
   width: 100%; 
@@ -154,7 +165,7 @@ body {
   box-sizing: border-box;
   border-radius: 50%;
 }
-  .image-container img[src="images/resized/Cache Valley - joshua-hoehne-p0x0osKKFng-unsplash.jpg"] {
+  /* .image-container img[src="images/resized/Cache Valley - joshua-hoehne-p0x0osKKFng-unsplash.jpg"] {
     grid-column: 1 / span 1; 
   }
   .image-container img[src="images/resized/Ogden_Utah_2-chase-charaba-uRHzV3ca2fk-unsplash.jpg"] {
@@ -165,7 +176,7 @@ body {
   }
   .image-container img[src="images/resized/Ogden_Utah_Mountians.jpg"] {
     grid-column: 4 / span 1; 
-  }
+  } */
 
 .services {
 display: grid;
@@ -228,7 +239,15 @@ footer {
   color: #E4D3CB;
 }
 .contact-info a {
-  color: #00a2ff;
+  color: #E4D3CB;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  color: #730712;
+  text-decoration: underline;
+  background-color: #E4D3CB;
+  border: solid 4px #E4D3CB;
+
 }
 .social {
   display: flex;
