@@ -12,25 +12,41 @@ accent2-color: #730712;
 :root {
 --heading-font: 'Sofachrome Rg', sans-serif, "Montserrat", sans-serif;
 --paragraph-font: 'Roboto', "Open Sans", 'sans-serif'; /* Remove the comma at the end */
+}
 
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2B2D3C;
+  color: #E4D3CB;
+  /* max-width: 1600px; */
 }
 
 /* Header & Nav */
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Center items vertically */
+  /* width: 100%; */
+  align-items: center;
   background-color: #2B2D3C;
-  padding: 10px 20px;
-  /*Fixed Top Menu */
-  position:fixed;
-  top:0;
-  width: 100%;
+  padding: 10px 20px; 
+  position: sticky;
+  top: 0;
   z-index: 1;
 }
+.navbar {
+  margin-left: auto;
+}
+.navbar ul {
+  list-style-type: none;
+  background-color: #2B2D3C;
+  padding: 0;
+  margin: 0;
+}
 #logo_link {
-  display: flex;
-  align-items: center;
+  margin-right: auto;
 }
 .icon {
   width: 150px;
@@ -53,14 +69,6 @@ header {
 }
 .navbar a:hover {
   background-color: #a30010;
-}
-
-/* Body */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #2B2D3C;
-  color: #E4D3CB;
 }
 
 /* Hero */
@@ -101,6 +109,7 @@ body {
   border: 10px solid #a30010;
   transform: scale(1.4);
   font-family: var(--paragraph-font);
+  text-decoration: underline;
 }
 .m1 h1 {
   text-align: center;
@@ -139,10 +148,8 @@ body {
 }
 .proudly-servicing {
   gap: 10px;
-  /* border: 25px solid #2B2D3C; */
   background-color: #2B2D3C;
   margin: 0 150px;
-  /* border-bottom: solid 30px #2B2D3C; */
   border-top: solid 20px #730712;
   border-bottom: solid 20px #730712;
   font-family: var(--paragraph-font);
@@ -157,7 +164,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, minmax(300px, 1fr));
   justify-content: center;
-  align-items: center; /* Align items vertically */
+  align-items: center;
   margin: 0 auto;
   max-width: 1500px;
 }
@@ -190,7 +197,6 @@ margin: 0 150px;
 padding: 15px 20px 15px 20px;
 font-size: 30px;
 background: #E4D3CB;
-/* background-color: red; */
 color: black;
 overflow: hidden;
 border-bottom: solid 20px #2B2D3C;
@@ -217,7 +223,6 @@ padding: 15px 20px 15px 20px;
 }
 .Recent-Review{
   text-align: left;
-  /* margin: 0 150px; */
   padding: 15px 20px 15px 20px;
   font-size: 30px;
   background: #E4D3CB;
@@ -266,15 +271,14 @@ footer {
 .footer-icon {
   width: 150px;
 }
-
-.site-plan-link {
+/* .site-plan-link {
   background-color: #E4D3CB;
   margin: 0;
   width: 100%;
   text-align: center;
   border: solid 20px #E4D3CB;
   font-size: 20px;
-}
+} */
 
 
 
