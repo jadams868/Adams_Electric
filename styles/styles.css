@@ -446,6 +446,20 @@ footer {
 .social a {
   margin-left: 10px;
 }
+.social a img {
+  transition: transform 0.3s ease;
+}
+.social a:nth-child(1):hover img {
+  content: url('/images/icons/facebook3.png');
+}
+
+.social a:nth-child(2):hover img {
+  content: url('/images/icons/twitter3.png');
+}
+
+.social a:nth-child(3):hover img {
+  content: url('/images/icons/instagram3.png');
+}
 .footer-icon {
   width: 150px;
 }
