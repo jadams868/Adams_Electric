@@ -139,11 +139,13 @@ header {
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: 100%; */
   text-align: center;
-  margin-bottom: 600px;
   font-style: unset;
   background-color: #730712;
+  margin-bottom: 600px;
 }
 .numbertext {
   color: #E4D3CB;
@@ -179,16 +181,15 @@ header {
 }
 .hero-image_ab h1 {
   margin: 20px 150px;
-  color: #2B2D3C;
+  color: #730712;
   font-family: var(--heading-font);
 }
 .hero-image_ab p {
-  background-color: #730712;
-  color: #E4D3CB;
+  background-color: #E4D3CB;
+  color: #2B2D3C;
   font-style: bold;
-  border-bottom: solid 20px #2B2D3C;
+  border-bottom: solid 20px #730712;
 }
-
 
 
 
@@ -449,17 +450,15 @@ footer {
 .social a img {
   transition: transform 0.3s ease;
 }
-.social a:nth-child(1):hover img {
+/* .social a:nth-child(1):hover img {
   content: url('/images/icons/facebook3.png');
 }
-
 .social a:nth-child(2):hover img {
   content: url('/images/icons/twitter3.png');
 }
-
 .social a:nth-child(3):hover img {
   content: url('/images/icons/instagram3.png');
-}
+} */
 .footer-icon {
   width: 150px;
 }
