@@ -244,8 +244,7 @@ header {
 .hero-image button:hover {
   background-color: #a30010;
   font-weight: 600;
-  border: 10px solid #a30010;
-  transform: scale(1.4);
+  transform: scale(1.6);
   font-family: var(--paragraph-font);
   text-decoration: underline;
 }
@@ -414,6 +413,7 @@ padding: 15px 20px 15px 20px;
   grid-column: 1/2;
   margin: 0 auto;
   margin-left: 150px;
+  border-bottom: solid 10px #a30010;
 }
 .cu-title img {
   grid-column: 2/3;
@@ -422,24 +422,44 @@ padding: 15px 20px 15px 20px;
   object-fit: cover;
   overflow: hidden; 
   margin: auto; 
-  border: solid 10px #730712;
+  border: solid 10px #a30010;
   border-radius: 10px;
 }
-.cu-title h3 {
-  grid-column: 1/3;
+.cu-title button {
+  background-color: #a30010;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #E4D3CB;
+  border: none;
+  transition: transform 0.2s;
+  font-family: var(--paragraph-font);
+  align-items: center;
   text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  grid-column: 1/3;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.cu-title button:hover {
+  background-color: #a30010;
+  font-weight: 600;
+  transform: scale(1.3);
+  font-family: var(--paragraph-font);
+  text-decoration: underline;
 }
 .cu-title h2 {
   background: #2B2D3C;
   color: white;
   grid-column: 1/3;
   margin: 0px 0px;
-  border-top: solid 20px #2B2D3C;
-  border-bottom: solid 20px #2B2D3C;
+  border-top: solid 30px #2B2D3C;
+  border-bottom: solid 30px #2B2D3C;
   text-align: center;
+  font-size: 30px;
 }
-
-
 
 
 
