@@ -404,16 +404,19 @@ padding: 15px 20px 15px 20px;
   color: black;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  font-family: var(--paragraph-font);
 }
 .cu-title h1 {
   grid-column: 1/2;
   margin-left: 150px;
+  font-family: var(--paragraph-font);
 }
 .cu-title p {
   grid-column: 1/2;
   margin: 0 auto;
   margin-left: 150px;
   border-bottom: solid 10px #a30010;
+  font-family: var(--paragraph-font);
 }
 .cu-title img {
   grid-column: 2/3;
@@ -459,6 +462,7 @@ padding: 15px 20px 15px 20px;
   border-bottom: solid 30px #2B2D3C;
   text-align: center;
   font-size: 30px;
+  font-family: var(--paragraph-font);
 }
 
 
